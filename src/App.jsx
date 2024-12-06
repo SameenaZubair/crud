@@ -1,10 +1,8 @@
 import React from 'react';
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom';
-
 import LogIn from './pages/login'
 import SignUp from './pages/signup';
 import Dashboard from './pages/Dashboard'
-import Features from './components/Features';
 import Home from './components/Home';
 import AddBrand from './components/AddBrand';
 import AddProduct from './components/AddProduct';
@@ -17,7 +15,6 @@ function App() {
     createRoutesFromElements(
       <>
         <Route path="/" element={<Home />} />
-        <Route path="/features" element={<Features />} />
         <Route path="/login" element={<LogIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/dashboard" element={<Dashboard />} />
